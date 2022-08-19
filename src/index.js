@@ -10,8 +10,7 @@ const DEBOUNCE_DELAY = 300;
 refs.input.addEventListener('input', debounce(handleSearchCountries, DEBOUNCE_DELAY));
 
 function handleSearchCountries(e) {
-    const value = e.target.value.trim()
-    console.log(value)
+    const value = e.target.value.trim();
     if (!value) {
         refs.info.innerHTML = '';
         refs.list.innerHTML = '';
